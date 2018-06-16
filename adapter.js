@@ -11,9 +11,10 @@ class Adapter {
             .then( resp => resp.json())
             .then(data => {
                 data.results.forEach(element => {
-                    if (element.name.includes('Jerry')) {
-                        store.push(element)
-                    } 
+                    // if (element.name.includes('Jerry')) {
+                    //     store.push(element)
+                    // } 
+                    new Character(element)
                 })
             })
     }
