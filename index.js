@@ -15,4 +15,15 @@ function renderRandom() {
     item.render()
 }
 
+function handleClick(e) {
+    if (e.target === document.querySelector('span')) {
+        renderRandom()
+    } else if (e.target === document.querySelector('#alert')) {
+        alert("Jerry's can't try again")
+    } else if (e.target === document.querySelector('#ok')) {
+        window.location.reload()
+    }
+    console.log(e.target)
+}
 document.addEventListener('DOMContentLoaded', storeChar)
+document.addEventListener('click', handleClick)

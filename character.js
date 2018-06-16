@@ -12,11 +12,9 @@ class Character {
         card.innerHTML = `<img class="card-img-top" src="${this.image}" alt="random Jerry">
         <div class="card-body">
             <h5 class="card-title">${this.name}</h5>
-            <button>Okay</button>
-            <button>Try Again</button>
+            <button id='ok'>Okay</button>
+            <button id='alert'>Try Again</button>
         </div>`
-        {/* <div class="card bg-dark text-white">
-        </div> */}
     }
 
 }
