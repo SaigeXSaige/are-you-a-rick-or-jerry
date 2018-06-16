@@ -12,5 +12,7 @@ function filterChar() {
 function renderRandom() {
     const items = filterChar()
     item = items[Math.floor(Math.random()*items.length)]
-    item.render
+    item.render()
 }
+
+document.addEventListener('DOMContentLoaded', storeChar())
