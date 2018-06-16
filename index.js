@@ -15,4 +15,4 @@ function renderRandom() {
     item.render()
 }
 
-document.addEventListener('DOMContentLoaded', storeChar())
+document.addEventListener('DOMContentLoaded', storeChar)
